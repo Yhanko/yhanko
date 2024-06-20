@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    scroll-behavior: smooth;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.seta{
+  animation: seta 1.5s ease-in-out infinite;
+}
+
+
+@keyframes seta{
+  0%{
+    top: 43rem;
+  }
+  50%{
+      top: 44rem;
+  }
+  100%{
+    top: 43rem;
+  }
+}
+
+
+
+.swiper {
+  width: 80%;
+  height: 55%;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Estilos para cada slide do Swiper */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.custom-slide {
+  max-width: 90% !important;
+  max-height: 50% !important;
+}
+
+
+.swiper-pagination {
+  position: absolute !important;
+  top: 90% !important;
+
+  transform: translateX(-50%);
+  z-index: 1 !important; 
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #333 !important;
+  opacity: 0.5;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+
+.mySwiper{
+  display: flex;
+  gap: 80px;
+}
