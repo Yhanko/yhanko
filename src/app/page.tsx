@@ -73,12 +73,15 @@ export default function Home() {
        
          <p ref={texPRef} className="text-gray-300 text-center text-[16px]">
           Com a <span className="text-rose-400 font-bold">Yhanko</span> o crescimento, a expansão <br />
-          e a funcionalidade do seu projeto é easy
+          e a funcionalidade do seu projeto é kkkkkkkkkkkkkkkk
          </p>
          </div>
          <div ref={btnRef}  className="flex gap-[15px]">
           <button className="bg-violet-900 px-[40px] py-[12px] rounded-full text-[13px]">
             Contact
+          </button>
+          <button className="bg-white px-[40px] text-gray-400 font-medium shadow-[0_15px_45px_-12px_rgba(0,0,0,0.3)] py-[12px] rounded-full text-[13px] text-zinc-800">
+            About me
           </button>
           <button className="bg-white px-[40px] text-gray-400 font-medium shadow-[0_15px_45px_-12px_rgba(0,0,0,0.3)] py-[12px] rounded-full text-[13px] text-zinc-800">
             About me
