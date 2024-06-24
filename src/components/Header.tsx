@@ -22,22 +22,17 @@ export function Header(){
   
     return(
         <header className={`fixed  flex justify-around h-[6rem] transition-all duration-75 items-center z-10 w-screen ${scrolled && "backdrop-blur-md bg-white/30"}`}>
-            <div className="translate-x-[20%] mt-[40px]">
+            <div className="translate-x-[25%] mt-[40px] hover:cursor-pointer">
             <Image src={logo} alt="logo" />
             </div>
-            <nav className=" px-4">
-              <ul className="flex justify-center font-medium items-center text-zinc-800 gap-[32px] translate-x-[-10%] ">
-                <li className="text-violet-900 flex flex-col  gap-2 mt-[10px] hover:cursor-pointer">
-                  <span>Home</span>
-                  <div className="w-[45px] h-[5px] rounded-full bg-violet-900"></div>
-                </li>
-                <li className="hover:cursor-pointer">About me</li>
-                <li className="hover:cursor-pointer">Serviços</li>
-                <li className="hover:cursor-pointer">Membros</li>
-                <li className="hover:cursor-pointer">Projectos</li>
-                <li className="hover:cursor-pointer">Serviços</li>
-                <li className="hover:cursor-pointer">Tecnologias</li>
-                <li className="hover:cursor-pointer">Contactos</li>
+            <nav className="w-[40rem] translate-x-[-20%]">
+              <ul className="flex justify-center font-medium items-center text-zinc-800 gap-[32px]">
+                <li className="hover:cursor-pointer mt-[10px] hover:text-violet-900 font-semibold">Home</li>
+                <li className="hover:cursor-pointer mt-[10px] hover:text-violet-900 font-semibold">Serviços</li>
+                <li className="hover:cursor-pointer mt-[10px] hover:text-violet-900 font-semibold">Membros</li>
+                <li className="hover:cursor-pointer mt-[10px] hover:text-violet-900 font-semibold">Projectos</li>
+                <li className="hover:cursor-pointer mt-[10px] hover:text-violet-900 font-semibold">Tecnologias</li>
+                <li className="hover:cursor-pointer mt-[10px] hover:text-violet-900 font-semibold">Contactos</li>
               </ul>
             </nav>
         </header>
