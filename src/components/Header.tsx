@@ -32,7 +32,12 @@ export function Header(){
                   <div className="w-[45px] h-[5px] rounded-full bg-violet-900"></div>
                 </li>
                 <li>About me</li>
-                <li>Gallery</li>
+                <li>Serviços</li>
+                <li>Membros</li>
+                <li>Projectos</li>
+                <li>Serviços</li>
+                <li>Tecnologias</li>
+                <li>Contactos</li>
               </ul>
             </nav>
         </header>
