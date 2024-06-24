@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <>
      <div>
-     <div className=" w-[80rem] h-[100px] flex flex-col items-center ">
+     <div className=" w-screen h-[100px] flex flex-col items-center ">
         <div className=" absolute z-[-2] w-auto h-auto overflow-hidden ">
           <Image src={background} alt="img background" />
         </div>

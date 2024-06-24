@@ -25,19 +25,19 @@ export function Header(){
             <div className="translate-x-[20%] mt-[40px]">
             <Image src={logo} alt="logo" />
             </div>
-            <nav >
-              <ul className="flex justify-center font-medium items-center text-zinc-800 gap-[32px] translate-x-[-28%] ">
-                <li className="text-violet-900 flex flex-col  gap-2 mt-[10px]">
+            <nav className=" px-4">
+              <ul className="flex justify-center font-medium items-center text-zinc-800 gap-[32px] translate-x-[-10%] ">
+                <li className="text-violet-900 flex flex-col  gap-2 mt-[10px] hover:cursor-pointer">
                   <span>Home</span>
                   <div className="w-[45px] h-[5px] rounded-full bg-violet-900"></div>
                 </li>
-                <li>About me</li>
-                <li>Serviços</li>
-                <li>Membros</li>
-                <li>Projectos</li>
-                <li>Serviços</li>
-                <li>Tecnologias</li>
-                <li>Contactos</li>
+                <li className="hover:cursor-pointer">About me</li>
+                <li className="hover:cursor-pointer">Serviços</li>
+                <li className="hover:cursor-pointer">Membros</li>
+                <li className="hover:cursor-pointer">Projectos</li>
+                <li className="hover:cursor-pointer">Serviços</li>
+                <li className="hover:cursor-pointer">Tecnologias</li>
+                <li className="hover:cursor-pointer">Contactos</li>
               </ul>
             </nav>
         </header>
