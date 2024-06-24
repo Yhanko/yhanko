@@ -11,7 +11,7 @@ import typecard1 from "../../public/Group 1.svg";
 export const Slider = () => {
   return (
     <>
-      <h1 className="text-[#1a1a1a] text-[30px] font-bold mb-[50px]">
+      <h1 className="text-[#1a1a1a] text-[30px] font-bold mb-[50px] z-20">
         Nossos Serviços
       </h1>
       <Swiper

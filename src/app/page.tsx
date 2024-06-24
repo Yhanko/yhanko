@@ -86,7 +86,7 @@ export default function Home() {
           
          </div>
        </div>
-       <div className="seta absolute top-[44rem] left-[5rem]">
+       <div className="seta absolute -mt-4 left-[5.5rem]">
         <Image 
            src={seta}
            alt="seta"
@@ -95,7 +95,7 @@ export default function Home() {
        
       </div>
      
-      <section className="bg-slate-300 z-40 w-screen h-[600px] mt-[45.175rem] flex flex-col justify-center items-center">
+      <section className="bg-slate-300 w-screen h-[600px] mt-[43rem] flex flex-col justify-center items-center">
       <Slider />
      </section>
 
