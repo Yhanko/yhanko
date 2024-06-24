@@ -20,7 +20,7 @@ export function ExpandingContent(){
                
             </div>
 
-            <div className='flex flex-col mt-[9rem] w-[4]'>
+            <div className='flex flex-col mt-[9rem] w-[4rem]'>
                 <span className='fent-bold text-[2.2rem] text-[#57007B]'>3</span>
                 <div className='w-[4rem] h-1 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]'></div>
             </div>

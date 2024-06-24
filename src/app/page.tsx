@@ -95,12 +95,12 @@ export default function Home() {
        
       </div>
      
-      <section className="bg-slate-300 w-screen h-[600px] mt-[43rem] flex flex-col justify-center items-center">
+      <section className="bg-slate-300 z-40 w-screen h-[600px] mt-[43rem] flex flex-col justify-center items-center">
       <Slider />
      </section>
 
-     <section className="bg-white w-screen h-[600px]  flex flex-col justify-center items-center">
-      <div className="absolute z-30 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]  w-[5rem] h-[5rem] rounded-full -ml-[72rem] -mt-[37.5rem]"></div>
+     <section className="bg-white z-40 w-screen h-[600px]  flex flex-col justify-center items-center">
+      <div className="absolute z-0 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]  w-[5rem] h-[5rem] rounded-full -ml-[72rem] -mt-[37.5rem]"></div>
 
       <SlidesContainer />
      </section>

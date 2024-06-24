@@ -21,7 +21,7 @@ export function Header(){
     
   
     return(
-        <header className={`fixed  flex justify-around h-[6rem] transition-all duration-75 items-center z-10 w-screen ${scrolled && "backdrop-blur-md bg-white/30"}`}>
+        <header className={`fixed  flex justify-around h-[6rem] transition-all duration-75 items-center z-30 w-screen ${scrolled && "backdrop-blur-md bg-white/30"}`}>
             <div className="translate-x-[25%] mt-[40px] hover:cursor-pointer">
             <Image src={logo} alt="logo" />
             </div>
