@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { Slider } from "@/components/Slider";
 import { SlidesContainer } from '../components/slidesComponents/SlidesContainer';
+import { MemberSession } from '../components/memberSlide/MemberSession';
 
 export default function Home() {
   const textH1Ref = useRef(null)
@@ -100,10 +101,14 @@ export default function Home() {
      </section>
 
      <section className="bg-white z-40 w-screen h-[600px]  flex flex-col justify-center items-center">
-      <div className="absolute z-0 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]  w-[5rem] h-[5rem] rounded-full -ml-[72rem] -mt-[37.5rem]"></div>
-
-      <SlidesContainer />
+        <SlidesContainer />
      </section>
+
+      <section className="bg-white z-40 w-screen h-[600px]  flex flex-col justify-center items-center">
+        <div className="absolute z-0 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]  w-[6rem] h-[0.4rem] ml-[1rem] -mt-[30rem]"></div>
+        <MemberSession />
+     </section>
+
      </div>
     </>
   );

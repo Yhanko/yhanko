@@ -31,29 +31,26 @@ register();
 export function SlidesContainer(){
     return(
            
-                <Swiper
-                    slidesPerView={1}
-                    modules={[Navigation, Pagination, A11y]}
-                    spaceBetween={10}
-                    slidePrevClass='auto'
-                    className={styles.swiper}
-                
-                >
-                       
-                  <SwiperSlide className='h-[400px] w-screen'>
-                        <ContentWho/>
-                    </SwiperSlide>
+          <Swiper
+            slidesPerView={1}
+            modules={[Navigation, Pagination, A11y]}
+            spaceBetween={10}
+            slidePrevClass='auto'
+            className={styles.swiper}  
+            >           
+              <SwiperSlide className='h-[400px] w-screen'>
+                <ContentWho/>
+              </SwiperSlide>
 
-                  <SwiperSlide className='h-[400px] w-screen'>
-                     <ThinkContent/>
-                  </SwiperSlide >
+              <SwiperSlide className='h-[400px] w-screen'>
+                <ThinkContent/>
+              </SwiperSlide >
 
-                  <SwiperSlide className='h-[400px] w-screen'>
-                    <ExpandingContent/>
-                  </SwiperSlide>
+              <SwiperSlide className='h-[400px] w-screen'>
+                <ExpandingContent/>
+              </SwiperSlide>
                         
-                  <SwiperNavBottons/>
-                </Swiper>
-           
+              <SwiperNavBottons/>
+              </Swiper>
     )
 }
