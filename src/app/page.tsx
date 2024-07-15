@@ -1,5 +1,7 @@
 "use client"
 import Image from "next/image";
+import ArrowRihgt from '../../public/Deco-img-arrow.png';
+import ArrowLeft from '../../public/Deco-img-arrow1.png';
 import background from "../../public/BackgorundHeader.svg";
 import seta from "../../public/ion_arrow-back-outline.svg";
 import { Header } from "@/components/Header";
@@ -8,6 +10,7 @@ import { useEffect, useRef } from "react";
 import { Slider } from "@/components/Slider";
 import { SlidesContainer } from '../components/slidesComponents/SlidesContainer';
 import { MemberSession } from '../components/memberSlide/MemberSession';
+import { Project } from '../components/project/Project';
 
 export default function Home() {
   const textH1Ref = useRef(null)
@@ -105,9 +108,17 @@ export default function Home() {
      </section>
 
       <section className="bg-white z-40 w-screen h-[600px]  flex flex-col justify-center items-center">
-        <div className="absolute z-0 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]  w-[6rem] h-[0.4rem] ml-[1rem] -mt-[30rem]"></div>
+        <div className="absolute z-0 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]  w-[6rem] h-[0.4rem] -ml-[0rem] -mt-[30rem]"></div>
         <MemberSession />
+        <Image src={ArrowLeft} height={250} width={250} alt='arrow' className="absolute mt-[30rem] left-[5rem]"/>
      </section>
+
+     <section className="bg-white z-40 w-screen h-[1450px]  flex flex-col justify-center items-center">
+     <div className="absolute z-0 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]  w-[6rem] h-[0.4rem] -ml-[0rem] -mt-[90rem]"></div>
+     <Image src={ArrowRihgt} height={200} width={200} alt='arrow' className="absolute -mt-[86rem] right-[10rem]"/>
+      <Project />
+     </section>
+     
 
      </div>
     </>
