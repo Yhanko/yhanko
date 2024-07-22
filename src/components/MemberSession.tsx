@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import {User, dataYhanko} from './data'
+import {User, dataYhanko} from './memberSlide/data';
 
 register();
 

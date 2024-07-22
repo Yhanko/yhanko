@@ -8,9 +8,12 @@ import { Header } from "@/components/Header";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { Slider } from "@/components/Slider";
-import { SlidesContainer } from '../components/slidesComponents/SlidesContainer';
-import { MemberSession } from '../components/memberSlide/MemberSession';
-import { Project } from '../components/project/Project';
+import { SlidesContainer } from '../components/SlidesContainer';
+import { MemberSession } from '../components/MemberSession';
+import { Project } from '../components/Project';
+import { Tecnologies } from "../components/Tecnologies";
+import Gradient from "../../public/Gradient.png";
+
 
 export default function Home() {
   const textH1Ref = useRef(null)
@@ -119,6 +122,10 @@ export default function Home() {
       <Project />
      </section>
      
+     <section className="bg-gradient-to-br from-blue-500 via-[#262629] to-[#262629] z-40 w-screen h-[600px]  flex flex-col items-center gap-20">
+      <h2 className="mt-14 text-[30px] font-bold z-20">Tecnologias que fazemos uso</h2>
+        <Tecnologies/>
+     </section>
 
      </div>
     </>

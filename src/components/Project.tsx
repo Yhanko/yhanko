@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Project1 from '../../../public/Case-study__image.png';
-import Project2 from '../../../public/Case-study__image1.png';
-import Project3 from '../../../public/Case-study__image2.png';
+import Project1 from '../../public/Case-study__image.png';
+import Project2 from '../../public/Case-study__image1.png';
+import Project3 from '../../public/Case-study__image2.png';
 import Link from "next/link";
 
 export function Project(){

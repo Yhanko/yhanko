@@ -1,19 +1,19 @@
 //Importação do Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { register } from 'swiper/element/bundle';
-import { SwiperNavBottons } from './NavBottobs';
+import { SwiperNavBottons } from './slidesComponents/NavBottobs';
 import { A11y, Navigation, Pagination } from 'swiper/modules';
 
 //Estilos do Swiper
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import styles from './swiperStyle.module.css';
+import styles from './slidesComponents/swiperStyle.module.css';
 
 
-import { ContentWho } from './contentSlides/What';
-import {ThinkContent} from './contentSlides/Think';
-import { ExpandingContent } from './contentSlides/Expanding';
+import { ContentWho } from './slidesComponents/contentSlides/What';
+import {ThinkContent} from './slidesComponents/contentSlides/Think';
+import { ExpandingContent } from './slidesComponents/contentSlides/Expanding';
 
 
 
