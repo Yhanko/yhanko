@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import {User, dataYhanko} from './memberSlide/data';
+import {User, dataYhanko} from './data';
 
 register();
 
@@ -16,7 +16,7 @@ register();
  * @returns 
  */
 
-export function MemberSession(){
+export default function MemberSession(){
   return (
     <>
       <h1 className="text-[#1a1a1a] text-[30px] font-bold mb-[50px] z-20 flex flex-col">

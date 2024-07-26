@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Project1 from '../../public/Case-study__image.png';
-import Project2 from '../../public/Case-study__image1.png';
-import Project3 from '../../public/Case-study__image2.png';
+import Project1 from '../../../public/Case-study__image.png';
+import Project2 from '../../../public/Case-study__image1.png';
+import Project3 from '../../../public/Case-study__image2.png';
 import Link from "next/link";
 
-export function Project(){
+export default function Project(){
     return(
         <div className="flex flex-col w-screen h-[400px] -mt-[18rem] items-center">    
              <h1 className="text-[#1a1a1a] text-[30px] font-bold z-20 flex flex-col -mt-[23rem] text-center">

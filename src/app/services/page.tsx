@@ -6,9 +6,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css/pagination";
 import "swiper/swiper-bundle.css";
-import typecard1 from "../../public/Group 1.svg";
+import typecard1 from "../../../public/Group 1.svg";
 
-export const Slider = () => {
+export default function Services() {
   return (
     <>
       <h1 className="text-[#1a1a1a] text-[30px] font-bold mb-[50px] z-20">

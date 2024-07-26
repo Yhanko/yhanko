@@ -1,18 +1,19 @@
 "use client"
+import Link from "next/link";
 import Image from "next/image";
 import ArrowRihgt from '../../public/Deco-img-arrow.png';
 import ArrowLeft from '../../public/Deco-img-arrow1.png';
 import background from "../../public/BackgorundHeader.svg";
 import seta from "../../public/ion_arrow-back-outline.svg";
-import { Header } from "@/components/Header";
+import { Header } from "@/app/Header";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
-import { Slider } from "@/components/Slider";
-import { SlidesContainer } from '../components/SlidesContainer';
-import { MemberSession } from '../components/MemberSession';
-import { Project } from '../components/Project';
-import { Tecnologies } from "../components/Tecnologies";
-import Gradient from "../../public/Gradient.png";
+import  Services  from "./services/page";
+import  { SlidesContainer }  from '../components/SlidesContainer';
+import  MemberSession  from './members/page';
+import  Project  from './project/page';
+import Tecnologies  from "./tecnology/page";
+import  Footer  from "./contact/page";
 
 
 export default function Home() {
@@ -67,6 +68,7 @@ export default function Home() {
     <>
      <div>
      <div className=" w-screen h-[100px] flex flex-col items-center ">
+     
         <div className=" absolute z-[-2] w-auto h-auto overflow-hidden ">
           <Image src={background} alt="img background" />
         </div>
@@ -103,7 +105,7 @@ export default function Home() {
       </div>
      
       <section className="bg-slate-300 z-40 w-screen h-[600px] mt-[43rem] flex flex-col justify-center items-center">
-      <Slider />
+      <Services />
      </section>
 
      <section className="bg-white z-40 w-screen h-[600px]  flex flex-col justify-center items-center">
@@ -128,6 +130,7 @@ export default function Home() {
      </section>
 
      </div>
+     <Footer/>
     </>
   );
 }

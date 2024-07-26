@@ -1,10 +1,10 @@
 import Image from "next/image";
 import {Imge, dataYhanko} from "./tecnoliesData/data";
-import Yhanko from "../../public/yhankoIcon.png";
+import Yhanko from "../../../public/yhankoIcon.png";
 
 
 
-export function Tecnologies(){
+export default function Tecnologies(){
     return( 
         <div>
             <div className="flex flex-row">
